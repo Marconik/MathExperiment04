@@ -1,0 +1,2844 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    130891,       2836]
+NotebookOptionsPosition[    130087,       2812]
+NotebookOutlinePosition[    130575,       2831]
+CellTagsIndexPosition[    130532,       2828]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         RowBox[{"t", "'"}], "[", "s", "]"}]},
+       {
+        RowBox[{
+         RowBox[{"n", "'"}], "[", "s", "]"}]},
+       {
+        RowBox[{
+         RowBox[{"b", "'"}], "[", "s", "]"}]}
+      }], ")"}], "==", 
+    RowBox[{
+     RowBox[{"(", GridBox[{
+        {"0", 
+         RowBox[{"1", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"s", "^", "2"}]}], ")"}]}], "0"},
+        {
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"s", "^", "2"}]}], ")"}]}], "0", 
+         RowBox[{
+          RowBox[{"s", "^", "2"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"s", "^", "2"}]}], ")"}]}]},
+        {"0", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"s", "^", "2"}]}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"s", "^", "2"}]}], ")"}]}], "0"}
+       }], ")"}], ".", 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{"t", "[", "s", "]"}]},
+        {
+         RowBox[{"n", "[", "s", "]"}]},
+        {
+         RowBox[{"b", "[", "s", "]"}]}
+       }], ")"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"t", "[", "s", "]"}], ",", 
+     RowBox[{"n", "[", "s", "]"}], ",", 
+     RowBox[{"b", "[", "s", "]"}]}], "}"}], ",", "s"}], "]"}]], "Input",
+ CellChangeTimes->{{3.939175461710351*^9, 3.9391756361603537`*^9}, {
+  3.939175724600346*^9, 3.93917572683554*^9}, {3.939175761851862*^9, 
+  3.939175785253933*^9}, {3.9391759098822823`*^9, 3.9391759140792656`*^9}, {
+  3.9391761858035097`*^9, 3.9391762270223665`*^9}, {3.9391765785717363`*^9, 
+  3.939176579879696*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"c6896317-f94e-4fb2-83bd-81659896c88b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"b", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"3"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {
+           2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+               3 \[FormalX]^2 + \[FormalX]^6) 
+              Derivative[1][\[FormalY]][\[FormalX]] + 
+             2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX]^2)^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0, 
+            Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+            1}]]], "[", "s", "]"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"2"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "1"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {
+           2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+               3 \[FormalX]^2 + \[FormalX]^6) 
+              Derivative[1][\[FormalY]][\[FormalX]] + 
+             2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX]^2)^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0, 
+            Derivative[1][\[FormalY]][1] == 1, Derivative[2][\[FormalY]][1] == 
+            0}]]], "[", "s", "]"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"1"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "1"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {
+           2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+               3 \[FormalX]^2 + \[FormalX]^6) 
+              Derivative[1][\[FormalY]][\[FormalX]] + 
+             2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX]^2)^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 1, 
+            Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+            0}]]], "[", "s", "]"}]}]}]}], ",", 
+    RowBox[{
+     RowBox[{"n", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", 
+          SuperscriptBox["s", "2"]}], ")"}], " ", 
+        TemplateBox[{"1"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                  RowBox[{"-", 
+                    FractionBox["1", "2"]}]}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           
+           Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                7 \[FormalX]^3 + \[FormalX]^7) 
+               Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                4 \[FormalX]^4 + 3 \[FormalX]^6) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                 1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+             0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 0, 
+             Derivative[2][\[FormalY]][1] == Rational[-1, 2]}]]], "[", "s", 
+         "]"}]}], 
+       SuperscriptBox["s", "2"]], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", 
+          SuperscriptBox["s", "2"]}], ")"}], " ", 
+        TemplateBox[{"3"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           
+           Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                7 \[FormalX]^3 + \[FormalX]^7) 
+               Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                4 \[FormalX]^4 + 3 \[FormalX]^6) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                 1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+             0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 1, 
+             Derivative[2][\[FormalY]][1] == 1}]]], "[", "s", "]"}]}], 
+       SuperscriptBox["s", "2"]], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", 
+          SuperscriptBox["s", "2"]}], ")"}], " ", 
+        TemplateBox[{"2"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "1"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                  RowBox[{"-", 
+                    FractionBox["5", "2"]}]}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                7 \[FormalX]^3 + \[FormalX]^7) 
+               Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                4 \[FormalX]^4 + 3 \[FormalX]^6) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                 1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+             0, \[FormalY][1] == 1, Derivative[1][\[FormalY]][1] == 0, 
+             Derivative[2][\[FormalY]][1] == Rational[-5, 2]}]]], "[", "s", 
+         "]"}]}], 
+       SuperscriptBox["s", "2"]]}]}], ",", 
+    RowBox[{
+     RowBox[{"t", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"2"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["s", "2"], " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {
+              2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+                  3 \[FormalX]^2 + \[FormalX]^6) 
+                 Derivative[1][\[FormalY]][\[FormalX]] + 
+                2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 1, 
+               Derivative[2][\[FormalY]][1] == 0}]]], "[", "s", "]"}]}], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             SuperscriptBox["s", "2"]}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["5", "2"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                   3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                   7 \[FormalX]^3 + \[FormalX]^7) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                   4 \[FormalX]^4 + 3 \[FormalX]^6) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 1, Derivative[1][\[FormalY]][1] == 0, 
+                Derivative[2][\[FormalY]][1] == Rational[-5, 2]}]]], "[", "s",
+             "]"}]}], 
+          SuperscriptBox["s", "3"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              SuperscriptBox["s", "2"]}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"80", "+", 
+                    RowBox[{"36", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"240", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"54", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "80"}], " ", "\[FormalX]"}], "+", 
+                    RowBox[{"24", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "-", 
+                    RowBox[{"177", " ", 
+                    SuperscriptBox["\[FormalX]", "5"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "7"]}], "+", 
+                    RowBox[{"12", " ", 
+                    SuperscriptBox["\[FormalX]", "9"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "13"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"40", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"42", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"106", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"34", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "-", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "10"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["5", "2"]}]}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "4"}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(80 + 36 \[FormalX]^2 + 
+                   6 \[FormalX]^4 - 240 \[FormalX]^6 - 54 \[FormalX]^8 + 
+                   4 \[FormalX]^12) \[FormalY][\[FormalX]] + ((-80) \
+\[FormalX] + 24 \[FormalX]^3 - 177 \[FormalX]^5 + 4 \[FormalX]^7 + 
+                   12 \[FormalX]^9 + \[FormalX]^13) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (40 \[FormalX]^2 - 
+                   42 \[FormalX]^4 - 106 \[FormalX]^6 - 34 \[FormalX]^8 - 
+                   6 \[FormalX]^10 + 4 \[FormalX]^12) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 (-10 - 3 \[FormalX]^2 + \[FormalX]^6) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                0, Derivative[1][\[FormalY]][1] == Rational[-5, 2], 
+                Derivative[2][\[FormalY]][1] == 4}]]], "[", "s", "]"}]}], 
+          SuperscriptBox["s", "2"]]}], ")"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"1"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["s", "2"], " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {
+              2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+                  3 \[FormalX]^2 + \[FormalX]^6) 
+                 Derivative[1][\[FormalY]][\[FormalX]] + 
+                2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 1, Derivative[1][\[FormalY]][1] == 0, 
+               Derivative[2][\[FormalY]][1] == 0}]]], "[", "s", "]"}]}], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             SuperscriptBox["s", "2"]}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["1", "2"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                   3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                   7 \[FormalX]^3 + \[FormalX]^7) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                   4 \[FormalX]^4 + 3 \[FormalX]^6) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 0, 
+                Derivative[2][\[FormalY]][1] == Rational[-1, 2]}]]], "[", "s",
+             "]"}]}], 
+          SuperscriptBox["s", "3"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              SuperscriptBox["s", "2"]}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"80", "+", 
+                    RowBox[{"36", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"240", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"54", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "80"}], " ", "\[FormalX]"}], "+", 
+                    RowBox[{"24", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "-", 
+                    RowBox[{"177", " ", 
+                    SuperscriptBox["\[FormalX]", "5"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "7"]}], "+", 
+                    RowBox[{"12", " ", 
+                    SuperscriptBox["\[FormalX]", "9"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "13"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"40", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"42", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"106", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"34", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "-", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "10"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["1", "2"]}]}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", "1"}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(80 + 36 \[FormalX]^2 + 
+                   6 \[FormalX]^4 - 240 \[FormalX]^6 - 54 \[FormalX]^8 + 
+                   4 \[FormalX]^12) \[FormalY][\[FormalX]] + ((-80) \
+\[FormalX] + 24 \[FormalX]^3 - 177 \[FormalX]^5 + 4 \[FormalX]^7 + 
+                   12 \[FormalX]^9 + \[FormalX]^13) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (40 \[FormalX]^2 - 
+                   42 \[FormalX]^4 - 106 \[FormalX]^6 - 34 \[FormalX]^8 - 
+                   6 \[FormalX]^10 + 4 \[FormalX]^12) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 (-10 - 3 \[FormalX]^2 + \[FormalX]^6) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                0, Derivative[1][\[FormalY]][1] == Rational[-1, 2], 
+                Derivative[2][\[FormalY]][1] == -1}]]], "[", "s", "]"}]}], 
+          SuperscriptBox["s", "2"]]}], ")"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"3"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["s", "2"], " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "5"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"6", "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {
+              2 \[FormalX]^5 \[FormalY][\[FormalX]] + (6 + 
+                  3 \[FormalX]^2 + \[FormalX]^6) 
+                 Derivative[1][\[FormalY]][\[FormalX]] + 
+                2 \[FormalX] (-2 + \[FormalX]^2) (1 + \[FormalX]^2) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 0, 
+               Derivative[2][\[FormalY]][1] == 1}]]], "[", "s", "]"}]}], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             SuperscriptBox["s", "2"]}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"9", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"22", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"7", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "7"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "7"}], " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "+", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-30 - 9 \[FormalX]^2 + 
+                   3 \[FormalX]^6) \[FormalY][\[FormalX]] + (22 \[FormalX] + 
+                   7 \[FormalX]^3 + \[FormalX]^7) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + ((-7) \[FormalX]^2 - 
+                   4 \[FormalX]^4 + 3 \[FormalX]^6) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 1, 
+                Derivative[2][\[FormalY]][1] == 1}]]], "[", "s", "]"}]}], 
+          SuperscriptBox["s", "3"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              SuperscriptBox["s", "2"]}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"80", "+", 
+                    RowBox[{"36", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"240", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"54", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "80"}], " ", "\[FormalX]"}], "+", 
+                    RowBox[{"24", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "-", 
+                    RowBox[{"177", " ", 
+                    SuperscriptBox["\[FormalX]", "5"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "7"]}], "+", 
+                    RowBox[{"12", " ", 
+                    SuperscriptBox["\[FormalX]", "9"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "13"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"40", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"42", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}], "-", 
+                    RowBox[{"106", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}], "-", 
+                    RowBox[{"34", " ", 
+                    SuperscriptBox["\[FormalX]", "8"]}], "-", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "10"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "12"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    SuperscriptBox["\[FormalX]", "2"]}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "6"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["11", "2"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              Function[{\[FormalY], \[FormalX]}, {(80 + 36 \[FormalX]^2 + 
+                   6 \[FormalX]^4 - 240 \[FormalX]^6 - 54 \[FormalX]^8 + 
+                   4 \[FormalX]^12) \[FormalY][\[FormalX]] + ((-80) \
+\[FormalX] + 24 \[FormalX]^3 - 177 \[FormalX]^5 + 4 \[FormalX]^7 + 
+                   12 \[FormalX]^9 + \[FormalX]^13) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (40 \[FormalX]^2 - 
+                   42 \[FormalX]^4 - 106 \[FormalX]^6 - 34 \[FormalX]^8 - 
+                   6 \[FormalX]^10 + 4 \[FormalX]^12) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX]^2)^2 (-10 - 3 \[FormalX]^2 + \[FormalX]^6) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                1, Derivative[1][\[FormalY]][1] == 1, 
+                Derivative[2][\[FormalY]][1] == Rational[-11, 2]}]]], "[", 
+            "s", "]"}]}], 
+          SuperscriptBox["s", "2"]]}], ")"}]}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.9391764172271175`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"decbee02-05ce-4837-9cae-01284a37a872"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", GridBox[{
+       {
+        RowBox[{
+         RowBox[{"t", "'"}], "[", "s", "]"}]},
+       {
+        RowBox[{
+         RowBox[{"n", "'"}], "[", "s", "]"}]},
+       {
+        RowBox[{
+         RowBox[{"b", "'"}], "[", "s", "]"}]}
+      }], ")"}], "==", 
+    RowBox[{
+     RowBox[{"(", GridBox[{
+        {"0", 
+         RowBox[{"1", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", "s"}], ")"}]}], "0"},
+        {
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", "s"}], ")"}]}], "0", 
+         RowBox[{"s", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", "s"}], ")"}]}]},
+        {"0", 
+         RowBox[{
+          RowBox[{"-", "s"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", "s"}], ")"}]}], "0"}
+       }], ")"}], ".", 
+     RowBox[{"(", GridBox[{
+        {
+         RowBox[{"t", "[", "s", "]"}]},
+        {
+         RowBox[{"n", "[", "s", "]"}]},
+        {
+         RowBox[{"b", "[", "s", "]"}]}
+       }], ")"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"t", "[", "s", "]"}], ",", 
+     RowBox[{"n", "[", "s", "]"}], ",", 
+     RowBox[{"b", "[", "s", "]"}]}], "}"}], ",", "s"}], "]"}]], "Input",
+ CellChangeTimes->{{3.939178425714016*^9, 3.939178441990183*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"5e50ee7e-9dc2-419b-a735-fed1e47adcb4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"b", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"3"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+              Derivative[
+               1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+               1 + \[FormalX]) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX])^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0, 
+            Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+            1}]]], "[", "s", "]"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"2"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "1"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+              Derivative[
+               1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+               1 + \[FormalX]) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX])^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0, 
+            Derivative[1][\[FormalY]][1] == 1, Derivative[2][\[FormalY]][1] == 
+            0}]]], "[", "s", "]"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"1"},
+        "C"], " ", 
+       RowBox[{
+        InterpretationBox[
+         TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+               RowBox[{
+                 RowBox[{
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "1"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[", 
+                   "1", "]"}], "\[Equal]", "0"}]}, {
+               RowBox[{
+                 RowBox[{
+                   SuperscriptBox[
+                   "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+             BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+              SuperscriptBox["\[FormalY]", 
+               TagBox[
+                RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+               None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+          "HolonomicDisplay"],
+         DifferentialRoot[
+          
+          Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+              Derivative[
+               1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+               1 + \[FormalX]) 
+              Derivative[
+               2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (1 + \[FormalX])^2 
+              Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 1, 
+            Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+            0}]]], "[", "s", "]"}]}]}]}], ",", 
+    RowBox[{
+     RowBox[{"n", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+        TemplateBox[{"1"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                  RowBox[{"-", 
+                    FractionBox["1", "4"]}]}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           
+           Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                2 \[FormalX] - \[FormalX]^2 + 
+                2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+               Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (1 + \[FormalX])^2 
+               Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0,
+              Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+             Rational[-1, 4]}]]], "[", "s", "]"}]}], "s"], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+        TemplateBox[{"3"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                  FractionBox["1", "2"]}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           
+           Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                2 \[FormalX] - \[FormalX]^2 + 
+                2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+               Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (1 + \[FormalX])^2 
+               Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 0,
+              Derivative[1][\[FormalY]][1] == 1, Derivative[2][\[FormalY]][1] == 
+             Rational[1, 2]}]]], "[", "s", "]"}]}], "s"], "+", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+        TemplateBox[{"2"},
+         "C"], " ", 
+        RowBox[{
+         InterpretationBox[
+          TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", "1"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                  RowBox[{"-", 
+                    FractionBox["5", "4"]}]}]}}, 
+              BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+               SuperscriptBox["\[FormalY]", 
+                TagBox[
+                 RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+           "HolonomicDisplay"],
+          DifferentialRoot[
+           
+           Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                2 \[FormalX] - \[FormalX]^2 + 
+                2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+               Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+               Derivative[
+                2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (1 + \[FormalX])^2 
+               Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 1,
+              Derivative[1][\[FormalY]][1] == 0, Derivative[2][\[FormalY]][1] == 
+             Rational[-5, 4]}]]], "[", "s", "]"}]}], "s"]}]}], ",", 
+    RowBox[{
+     RowBox[{"t", "[", "s", "]"}], "\[Rule]", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"2"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"s", " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+                 Derivative[
+                  1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+                  1 + \[FormalX]) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 1, 
+               Derivative[2][\[FormalY]][1] == 0}]]], "[", "s", "]"}]}], "+", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["5", "4"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                   2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 1, Derivative[1][\[FormalY]][1] == 0, 
+                Derivative[2][\[FormalY]][1] == Rational[-5, 4]}]]], "[", "s",
+             "]"}]}], 
+          SuperscriptBox["s", "2"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", "s"}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"3", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"8", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "60"}], "-", 
+                    RowBox[{"15", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"13", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "4"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], "-", 
+                    RowBox[{"10", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["5", "4"]}]}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    FractionBox["9", "8"]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {
+               3 \[FormalX] (-30 - 8 \[FormalX] - 3 \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (-60 - 
+                   15 \[FormalX] + 13 \[FormalX]^2 + 
+                   4 \[FormalX]^3 + \[FormalX]^4 + 2 \[FormalX]^6) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (
+                   1 + \[FormalX]) (-40 - 10 \[FormalX] - 5 \[FormalX]^2 - 
+                   8 \[FormalX]^3 + 6 \[FormalX]^4) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + (1 + \[FormalX])^2 (-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 2 \[FormalX]^4) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                0, Derivative[1][\[FormalY]][1] == Rational[-5, 4], 
+                Derivative[2][\[FormalY]][1] == Rational[9, 8]}]]], "[", "s", 
+            "]"}]}], "s"]}], ")"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"1"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"s", " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "0"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+                 Derivative[
+                  1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+                  1 + \[FormalX]) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 1, Derivative[1][\[FormalY]][1] == 0, 
+               Derivative[2][\[FormalY]][1] == 0}]]], "[", "s", "]"}]}], "+", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["1", "4"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                   2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 0, 
+                Derivative[2][\[FormalY]][1] == Rational[-1, 4]}]]], "[", "s",
+             "]"}]}], 
+          SuperscriptBox["s", "2"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", "s"}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"3", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"8", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "60"}], "-", 
+                    RowBox[{"15", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"13", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "4"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], "-", 
+                    RowBox[{"10", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["1", "4"]}]}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["1", "8"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {
+               3 \[FormalX] (-30 - 8 \[FormalX] - 3 \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (-60 - 
+                   15 \[FormalX] + 13 \[FormalX]^2 + 
+                   4 \[FormalX]^3 + \[FormalX]^4 + 2 \[FormalX]^6) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (
+                   1 + \[FormalX]) (-40 - 10 \[FormalX] - 5 \[FormalX]^2 - 
+                   8 \[FormalX]^3 + 6 \[FormalX]^4) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + (1 + \[FormalX])^2 (-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 2 \[FormalX]^4) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                0, Derivative[1][\[FormalY]][1] == Rational[-1, 4], 
+                Derivative[2][\[FormalY]][1] == Rational[-1, 8]}]]], "[", "s",
+             "]"}]}], "s"]}], ")"}]}], "+", 
+      RowBox[{
+       TemplateBox[{"3"},
+        "C"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"s", " ", 
+          RowBox[{
+           InterpretationBox[
+            TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "\[FormalX]", "+", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    SuperscriptBox["\[FormalX]", "4"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "\[FormalX]"}], ")"}], " ", 
+                    "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "0"}]}, {
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", "1"}]}}, 
+                BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                 SuperscriptBox["\[FormalY]", 
+                  TagBox[
+                   RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                  None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+             "HolonomicDisplay"],
+            DifferentialRoot[
+             
+             Function[{\[FormalY], \[FormalX]}, {\[FormalX]^3 \[FormalY][\
+\[FormalX]] + (2 + \[FormalX] + \[FormalX]^2 + \[FormalX]^4) 
+                 Derivative[
+                  1][\[FormalY]][\[FormalX]] + (-2 + \[FormalX]) \[FormalX] (
+                  1 + \[FormalX]) 
+                 Derivative[
+                  2][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+               0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 0, 
+               Derivative[2][\[FormalY]][1] == 1}]]], "[", "s", "]"}]}], "+", 
+         FractionBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "-", "s"}], ")"}], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"6", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "3"], "+", 
+                    SuperscriptBox["\[FormalX]", "5"]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "3"}], "+", 
+                    RowBox[{"2", " ", "\[FormalX]"}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalX]", "3"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "0"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    FractionBox["1", "2"]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {(-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (6 \[FormalX] + 
+                   2 \[FormalX]^2 + \[FormalX]^3 + \[FormalX]^5) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + \[FormalX]^2 (
+                   1 + \[FormalX]) (-3 + 2 \[FormalX]) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + \[FormalX]^3 (
+                    1 + \[FormalX])^2 Derivative[3][\[FormalY]][\[FormalX]] == 
+                0, \[FormalY][1] == 0, Derivative[1][\[FormalY]][1] == 1, 
+                Derivative[2][\[FormalY]][1] == Rational[1, 2]}]]], "[", "s", 
+            "]"}]}], 
+          SuperscriptBox["s", "2"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", "s"}], ")"}], "2"], " ", 
+           RowBox[{
+            InterpretationBox[
+             TemplateBox[<|"head" -> "DifferentialRoot", "big" -> GridBox[{{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"3", " ", "\[FormalX]", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "30"}], "-", 
+                    RowBox[{"8", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"3", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{"\[FormalY]", "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "60"}], "-", 
+                    RowBox[{"15", " ", "\[FormalX]"}], "+", 
+                    RowBox[{"13", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "+", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    SuperscriptBox["\[FormalX]", "4"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "6"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], "-", 
+                    RowBox[{"10", " ", "\[FormalX]"}], "-", 
+                    RowBox[{"5", " ", 
+                    SuperscriptBox["\[FormalX]", "2"]}], "-", 
+                    RowBox[{"8", " ", 
+                    SuperscriptBox["\[FormalX]", "3"]}], "+", 
+                    RowBox[{"6", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "\[FormalX]"}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "6"}], "-", 
+                    RowBox[{"2", " ", "\[FormalX]"}], "-", 
+                    SuperscriptBox["\[FormalX]", "2"], "+", 
+                    RowBox[{"2", " ", 
+                    SuperscriptBox["\[FormalX]", "4"]}]}], ")"}], " ", 
+                    RowBox[{
+                    SuperscriptBox["\[FormalY]", 
+                    TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                    None], "[", "\[FormalX]", "]"}]}]}], "\[Equal]", "0"}]}, {
+                   RowBox[{
+                    RowBox[{"\[FormalY]", "[", "1", "]"}], "\[Equal]", 
+                    "1"}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]", MultilineFunction -> None], "[",
+                     "1", "]"}], "\[Equal]", 
+                    FractionBox["1", "2"]}]}, {
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox[
+                    "\[FormalY]", "\[Prime]\[Prime]", MultilineFunction -> 
+                    None], "[", "1", "]"}], "\[Equal]", 
+                    RowBox[{"-", 
+                    FractionBox["9", "4"]}]}]}}, 
+                 BaseStyle -> {"HolonomicInnerGrid"}], "small" -> RowBox[{
+                  SuperscriptBox["\[FormalY]", 
+                   TagBox[
+                    RowBox[{"(", "3", ")"}], Derivative], MultilineFunction -> 
+                   None], "[", "\[FormalX]", "]"}], "branchcuts" -> "None"|>,
+              "HolonomicDisplay"],
+             DifferentialRoot[
+              
+              Function[{\[FormalY], \[FormalX]}, {
+               3 \[FormalX] (-30 - 8 \[FormalX] - 3 \[FormalX]^2 + 
+                   2 \[FormalX]^4) \[FormalY][\[FormalX]] + (-60 - 
+                   15 \[FormalX] + 13 \[FormalX]^2 + 
+                   4 \[FormalX]^3 + \[FormalX]^4 + 2 \[FormalX]^6) 
+                  Derivative[1][\[FormalY]][\[FormalX]] + (
+                   1 + \[FormalX]) (-40 - 10 \[FormalX] - 5 \[FormalX]^2 - 
+                   8 \[FormalX]^3 + 6 \[FormalX]^4) 
+                  Derivative[
+                   2][\[FormalY]][\[FormalX]] + (1 + \[FormalX])^2 (-6 - 
+                   2 \[FormalX] - \[FormalX]^2 + 2 \[FormalX]^4) 
+                  Derivative[3][\[FormalY]][\[FormalX]] == 0, \[FormalY][1] == 
+                1, Derivative[1][\[FormalY]][1] == Rational[1, 2], 
+                Derivative[2][\[FormalY]][1] == Rational[-9, 4]}]]], "[", "s",
+             "]"}]}], "s"]}], ")"}]}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.9391787103920884`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"9b6ba8b3-efdd-41de-a0ab-3e24f9bbfe8d"]
+}, Open  ]]
+},
+WindowSize->{1280, 652},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+Magnification:>1. Inherited,
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (2021\:5e7412\:67082\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3f905196-a4d4-431f-9dc6-ca1f18e069f2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1876, 59, 75, "Input",ExpressionUUID->"c6896317-f94e-4fb2-83bd-81659896c88b"],
+Cell[2459, 83, 64376, 1364, 197, "Output",ExpressionUUID->"decbee02-05ce-4837-9cae-01284a37a872"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66872, 1452, 1428, 49, 75, "Input",ExpressionUUID->"5e50ee7e-9dc2-419b-a735-fed1e47adcb4"],
+Cell[68303, 1503, 61768, 1306, 219, "Output",ExpressionUUID->"9b6ba8b3-efdd-41de-a0ab-3e24f9bbfe8d"]
+}, Open  ]]
+}
+]
+*)
+
